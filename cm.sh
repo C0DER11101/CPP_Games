@@ -1,4 +1,4 @@
-# compile C++ programs
+# compile C/C++ programs
 
 if [ -e $1 ]
 then
