@@ -13,6 +13,7 @@ In the above syntax:
 
 
 **range**: _The number of possible values between the start and end of the range with both numbers inclusive. For instance, for the range between 100 to 300, the offset will be 100, and the range will be 201._
+
 Now, look at an example to generate random numbers between the range 100 to 300, as mentioned above. 
 You will use the for loop in C++ to generate ten random numbers between the given range.
 
