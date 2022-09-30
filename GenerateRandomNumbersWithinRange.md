@@ -1,4 +1,4 @@
-# **A chunk of information acquired from here: [Click Here](https://www.simplilearn.com/tutorials/cpp-tutorial/random-number-generator-in-cpp)**
+# **A chunk of information acquired from here: [Click Here](https://www.simplilearn.com/tutorials/cpp-tutorial/random-number-generator-in-cpp "Read It")**
 ## How to Generate Random Numbers in C++ Within a Range
 
 _Similar to 1 and 10, you can generate random numbers within any range using the modulus operator. For instance, to generate numbers between 1 and 100, you can write int random = 1+ (rand() % 100). You can represent the general syntax of the equation as:
