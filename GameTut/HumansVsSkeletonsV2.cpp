@@ -10,11 +10,12 @@ using namespace std;
 
 
 void fight(int&, int&);
-void showHealthBar(int&, int&);
+void Status(int, int);
 char winner(int, int);
 
 int main(void)
 {
+	srand(time(NULL));
 	int numHumans, numSkeletons;
 
 	cout<<"enter number of humans: ";
@@ -24,8 +25,10 @@ int main(void)
 
 	while(numHumans!=0 && numSkeletons!=0)
 	{
+		system("clear");
 		fight(numHumans, numSkeletons);
-		showHealthBar(numHumans, numSkeletons);
+		cout<<flush;
+		system("sleep 1");
 	}
 
 	char Victory;
@@ -41,3 +44,25 @@ int main(void)
 
 void fight(int& numH, int& numS)
 {
+	if((1+(rand()%10))%2==0)
+		numH--;
+	else
+		numS--;
+	Status(numH, numS);
+}
+
+void Status(int numH, int numS)
+{
+	cout.setf(ios::left, ios::adjustfield);
+	cout<<"Humans"<<setw(30)<<resetiosflags(ios::left)<<"Skeletons"<<"\n";
+	cout.setf(ios::left, ios::adjustfield);
+	cout<<"["<<numH<<"]"<<setw(30)<<resetiosflags(ios::left)<<"["<<numS<<"]"<<"\n";
+}
+
+char winner(int numH, int numS)
+{
+	if(numH>numS)
+		return 'h';
+	else
+		return 's';
+}
