@@ -12,20 +12,13 @@ int main(void)
 
 	while(row==-1 || col==-1)
 	{
-		if(row==-1)
-		{
-			n=_getche();
-			row=n-'0';
-		}
-
-		if(col==-1)
-		{
-			n=_getche();
-			col=n-'0';
-		}
+		n=_getche();
+		row=n-'0';
+		n=_getche();
+		col=n-'0';
 	}
 
 	cout<<"\n\nRow = "<<row<<setw(20)<<"Col = "<<col<<"\n";
-
+	cout<<"\n\nSum of rows and columns: "<<row+col<<"\n";
 	return 0;
 }
