@@ -111,7 +111,7 @@ Game&checkWinner(Game&p1, Game&p2, int dmsn) // returns the player number of the
 					return p2;
 		}
 
-		for(int y=0; y<dmsn; y++)
+		for(int y=0; y<dmsn; y++) // checking diagonally!!
 		{
 			if((x+2)<dmsn && (y+2)<dmsn)
 			{
