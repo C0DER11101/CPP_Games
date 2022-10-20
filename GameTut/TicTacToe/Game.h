@@ -25,6 +25,6 @@ class Game
 
 Game defobj; // just a default object!!
 void showBoard(int);
-Game&checkWinner(Game&, Game&, int); // checks who has entered 3 consecutive symbols(This function is incomplete!!!)
+Game&checkWinner(Game&, Game&, int); // checks who has entered 3 consecutive symbols!!!
 
 #endif
