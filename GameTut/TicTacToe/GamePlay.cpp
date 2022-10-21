@@ -122,6 +122,18 @@ Game&checkWinner(Game&p1, Game&p2, int dmsn) // returns the player number of the
 			}
 		}
 
+		if((x+2)<dmsn)
+		{
+			for(int y=dmsn-1; y>=0; y--)
+			{
+				if(board[x][y]==p1.playerSymbol() && board[x+1][y-1]==p1.playerSymbol() && board[x+2][y-2]==p1.playerSymbol())
+					return p1;
+
+				if(board[x][y]==p2.playerSymbol() && board[x+1][y-1]==p2.playerSymbol() && board[x+2][y-2]==p2.playerSymbol())
+					return p2;
+			}
+		}
+
 	}
 
 	return defobj; // if no winner, then return default object!!
