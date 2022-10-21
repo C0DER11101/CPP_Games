@@ -1,8 +1,12 @@
-// C code to illustrate using
+// C++ code to illustrate using
 // graphics in linux environment
-#include<stdio.h>
+
+#include<iostream>
 #include<stdlib.h>
 #include<graphics.h>
+
+using namespace std;
+
 int main()
 {
 	int gd = DETECT, gm;
