@@ -14,7 +14,7 @@ int main(void)
 	{
 		n=_getche();
 		row=n-'0';
-		n=_getche();
+		n=_getche(); // for the space!!!
 		n=_getche();
 		col=n-'0';
 
