@@ -13,9 +13,20 @@ Game::Game(string name, int dim, char smb): _PlayerName(name), _dimension(dim), 
 
 int Game::playerInput()
 {
-	int x, y;
+	int x, y, count=0;
 	cout<<_PlayerName<<" your turn: ";
-	cin>>x>>y;
+	char n;
+
+	while(count!=2)
+	{
+		n=_getche();
+		++count;
+		x=n-'0';
+		n=_getche();
+		++count;
+		n=_getche();
+		y=n-'0';
+	}
 
 	return placeSymbol(x, y);
 }
