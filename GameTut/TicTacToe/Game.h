@@ -3,7 +3,7 @@
 
 using namespace std;
 
-char board[100][100];
+char board[100][100]={'\0'};
 
 class Game
 {
@@ -25,6 +25,7 @@ class Game
 
 Game defobj; // just a default object!!
 void showBoard(int);
+bool IsBoardFull(int); // check if the board is full or not!!
 Game&checkWinner(Game&, Game&, int); // checks who has entered 3 consecutive symbols!!!
 
 #endif

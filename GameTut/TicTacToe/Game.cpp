@@ -66,6 +66,12 @@ int main(void)
 		}
 
 		showBoard(dim);
+		if(IsBoardFull(dim))
+		{
+			cout<<"\n\nThe game is a tie!!\n\n";
+			exit(0);
+		}
+
 		winner=checkWinner(player1, player2, dim);
 		defobj.verifyPlayer(winner, player1, player2);
 

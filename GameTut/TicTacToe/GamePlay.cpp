@@ -11,6 +11,20 @@ Game::Game(string name, int dim, char smb): _PlayerName(name), _dimension(dim), 
 			board[x][y]=' ';
 }
 
+bool IsBoardFull(int dim)
+{
+	for(int x=0; x<dim; x++)
+	{
+		for(int y=0; y<dim; y++)
+		{
+			if(board[x][y]==' ')
+				return false;
+		}
+	}
+
+	return true;
+}
+
 int Game::playerInput()
 {
 	int x, y, count=0;
